@@ -1,4 +1,4 @@
-<def tag="jqgrid" attrs="id,jgfields,multiselect,pager,rownum,rowlist,viewrecords,height,noscroll,caption,sortname,sortord,autowidth,rownumbers,edit,add,delete,search,refresh,view,hiddengrid,scroll,scrollrows,colnames,colmodel,editoptions,addoptions,deleteoptions,searchoptions,url,editurl,datatype,loaderror,afterinsertrow,loadui,mtype,postdata,onpaging,toolbar,loadcomplete,celledit,cellsubmit,gridview,forcefit,rowedit,pickdate,pickdatefields,pickdateformat">
+<def tag="jqgrid-grid" attrs="id,jgfields,multiselect,pager,rownum,rowlist,viewrecords,height,noscroll,caption,sortname,sortord,autowidth,rownumbers,edit,add,delete,search,refresh,view,hiddengrid,scroll,scrollrows,colnames,colmodel,editoptions,addoptions,deleteoptions,searchoptions,url,editurl,datatype,loaderror,afterinsertrow,loadui,mtype,postdata,onpaging,toolbar,loadcomplete,celledit,cellsubmit,gridview,forcefit,rowedit,pickdate,pickdatefields,pickdateformat">
 
   <% 
       @_jqgridfldarray = []
@@ -109,9 +109,9 @@
         end
 
         unless colmodel.nil?
-          JqgridRequest.add('jqgrid-'+id,colmodel) 
+          jqgridRequest.add('jqgrid-'+id,colmodel) 
         else
-          JqgridRequest.add('jqgrid-'+id,@_jqgridfldstring) 
+          jqgridRequest.add('jqgrid-'+id,@_jqgridfldstring) 
         end
 
         h += "        ,rowNum: " + rownum.to_s + "\n" unless rownum.nil?
@@ -198,7 +198,7 @@
 	
 </def>
 
-<def tag="jqgrid-includes" attrs="theme">
+<def tag="jqgrid-grid-includes" attrs="theme">
   <% theme ||= "smoothness" %>
   <link rel="stylesheet" type="text/css" media="screen" href="themes/ui.jqgrid.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="themes/#{theme}/jquery-ui-1.7.2.custom.css" />

@@ -109,9 +109,9 @@
         end
 
         unless colmodel.nil?
-          JqgridRequest.add('jqgrid-'+id,colmodel) 
+          jqgridRequest.add('jqgrid-'+id,colmodel) 
         else
-          JqgridRequest.add('jqgrid-'+id,@_jqgridfldstring) 
+          jqgridRequest.add('jqgrid-'+id,@_jqgridfldstring) 
         end
 
         h += "        ,rowNum: " + rownum.to_s + "\n" unless rownum.nil?
