@@ -26,14 +26,22 @@ cd ..<br/>
 cd ..<br/>
 rake hobo_jqgrid:install<br/>
 
+Add a table to your app named colmodel with this structure:<br/>
+  fields do<br/>
+    jqgrid_id :string, :length => 30<br/>
+    elf       :string, :length => 10<br/>
+    colmodel  :text    <br/>
+    timestamps #optional<br/>
+  end<br/>
+<br/>
 Edit appliction.dryml and add:<br/>
-&lt;include src="jqgrid-grid" plugin="hobo-jqgrid"/&gt;<br/>
+&lt;include src="jqgrid" plugin="hobo-jqgrid"/&gt;<br/>
 
 In the header of your index page put:<br/>
-&lt;jqgrid-grid-includes/&gt;<br/>
+&lt;jqgrid-includes/&gt;<br/>
 
 In the content section of your index page put:<br/>
-&lt;jqgrid-grid id="mygrid"/&gt;<br/>
+&lt;jqgrid id="mygrid"/&gt;<br/>
 
 More docs to come soon....
 
