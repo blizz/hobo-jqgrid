@@ -18,7 +18,7 @@ The grid has a blog:
 Thanks to Tony Tomov the creator of this great component!
 
 Example 
-=======
+-------
 
 To install
 
@@ -26,7 +26,7 @@ To install
     git clone git://github.com/blizz/hobo-jqgrid.git
     cd ..
     cd ..
-    rake hobo_jqgrid:install`
+    rake hobo_jqgrid:install
 
 Add a table to your app named colmodel with this structure:
 
