@@ -22,7 +22,7 @@ Example
 
 To install
 
-    cd vendor\plugins
+    cd vendor/plugins
     git clone git://github.com/blizz/hobo-jqgrid.git
     cd ..
     cd ..
@@ -39,7 +39,7 @@ Add a table to your app named colmodel with this structure:
 
 Edit appliction.dryml and add:
 
-    <include src="jqgrid" plugin="hobo-jqgrid">
+    <include src="jqgrid" plugin="hobo-jqgrid"/>
 
 In the header of your index page put:
 
