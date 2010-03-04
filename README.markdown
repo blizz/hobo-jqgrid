@@ -41,15 +41,28 @@ Edit appliction.dryml and add:
 
     <include src="jqgrid" plugin="hobo-jqgrid"/>
 
-In the header of your index page put:
+Add this to scripts portion of your index page:
 
     <jqgrid-includes/>
+
+Example:
+
+<index-page>
+	<append-scripts:>
+		<jqgrid-includes/>
+	</append-scripts:>
+...
+
 
 In the content section of your index page put:
 
     <jqgrid id="mygrid"/>
 
-
+...	
+	<content-body:>
+		<jqgrid id="mygrid"/>
+	</content-body:>
+</index-page>
 
 
 Copyright (c) 2009 Brett Nelson, released under the MIT license
