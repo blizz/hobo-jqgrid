@@ -51,7 +51,6 @@ Example:
 	<append-scripts:>
 		<jqgrid-includes/>
 	</append-scripts:>
-...
 
 
 In the content section of your index page put:
