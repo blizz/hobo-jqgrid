@@ -62,4 +62,4 @@ Example:
       </content-body:>  
     </index-page>
 
-Copyright (c) 2009 Brett Nelson, released under the MIT license
+Copyright (c) 2010 Brett Nelson, released under the MIT license
