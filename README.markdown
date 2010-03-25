@@ -58,4 +58,15 @@ In the content section of your index page put:
     <jqgrid id="mygrid"/>
 
 
+Example:
+
+<index-page>
+  <append-scripts:>
+    <jqgrid-includes/>
+  </append-scripts:>
+  <content-body:>
+    <jqgrid id="mygrid"/>
+  </content-body:>  
+</index-page>
+
 Copyright (c) 2009 Brett Nelson, released under the MIT license
