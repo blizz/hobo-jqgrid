@@ -45,13 +45,6 @@ Add this to scripts portion of your index page:
 
     <jqgrid-includes/>
 
-Example:
-
-    <index-page>
-	<append-scripts:>
-		<jqgrid-includes/>
-	</append-scripts:>
-
 
 In the content section of your index page put:
 
