@@ -60,13 +60,13 @@ In the content section of your index page put:
 
 Example:
 
-<index-page>
-  <append-scripts:>
-    <jqgrid-includes/>
-  </append-scripts:>
-  <content-body:>
-    <jqgrid id="mygrid"/>
-  </content-body:>  
-</index-page>
+    <index-page>
+      <append-scripts:>
+        <jqgrid-includes/>
+      </append-scripts:>
+      <content-body:>
+        <jqgrid id="mygrid"/>
+      </content-body:>  
+    </index-page>
 
 Copyright (c) 2009 Brett Nelson, released under the MIT license
